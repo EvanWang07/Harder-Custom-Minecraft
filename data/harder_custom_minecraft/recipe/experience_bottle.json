@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "custom",
+    "category": "misc",
+    "ingredients": [
+      "minecraft:lapis_lazuli",
+      "minecraft:lapis_lazuli",
+      "minecraft:lapis_lazuli",
+      "minecraft:lapis_lazuli",
+      "minecraft:glass_bottle",
+      "minecraft:lapis_lazuli",
+      "minecraft:lapis_lazuli",
+      "minecraft:lapis_lazuli",
+      "minecraft:lapis_lazuli"
+    ],
+    "result": {
+      "id": "minecraft:experience_bottle",
+      "count": 1
+    }
+}
