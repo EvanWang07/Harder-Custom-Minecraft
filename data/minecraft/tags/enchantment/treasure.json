@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "harder_custom_minecraft:heavy",
+        "harder_custom_minecraft:fragility",
+        "harder_custom_minecraft:unenchantability",
+        "harder_custom_minecraft:warped"
+    ]
+}
