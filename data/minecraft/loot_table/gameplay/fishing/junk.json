@@ -2,6 +2,7 @@
   "type": "minecraft:fishing",
   "pools": [
     {
+      "rolls": 1,
       "bonus_rolls": 0,
       "entries": [
         {
@@ -213,10 +214,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "functions": [],
           "name": "minecraft:ink_sac",
-          "conditions": []
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -448,9 +447,18 @@
           "type": "minecraft:item",
           "name": "minecraft:book",
           "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:kelp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:seagrass",
+          "weight": 10
         }
-      ],
-      "rolls": 1
+      ]
     }
   ],
   "random_sequence": "minecraft:gameplay/fishing/junk"

@@ -2,6 +2,7 @@
   "type": "minecraft:fishing",
   "pools": [
     {
+      "rolls": 1,
       "bonus_rolls": 0,
       "entries": [
         {
@@ -109,8 +110,7 @@
           "name": "minecraft:pufferfish",
           "weight": 15
         }
-      ],
-      "rolls": 1
+      ]
     }
   ],
   "random_sequence": "minecraft:gameplay/fishing/fish"
