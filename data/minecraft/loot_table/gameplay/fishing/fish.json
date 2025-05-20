@@ -1,0 +1,117 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:snowy_taiga",
+                  "minecraft:snowy_beach",
+                  "minecraft:snowy_plains",
+                  "minecraft:snowy_slopes",
+                  "minecraft:ice_spikes",
+                  "minecraft:frozen_river",
+                  "minecraft:frozen_peaks",
+                  "minecraft:frozen_ocean",
+                  "minecraft:deep_frozen_ocean",
+                  "minecraft:jagged_peaks",
+                  "minecraft:grove"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 40,
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:snowy_beach",
+                  "minecraft:snowy_plains",
+                  "minecraft:snowy_slopes",
+                  "minecraft:snowy_taiga",
+                  "minecraft:ice_spikes",
+                  "minecraft:frozen_river",
+                  "minecraft:frozen_peaks",
+                  "minecraft:frozen_ocean",
+                  "minecraft:deep_frozen_ocean",
+                  "minecraft:jagged_peaks",
+                  "minecraft:grove"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 100,
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:sparse_jungle",
+                  "minecraft:bamboo_jungle",
+                  "minecraft:jungle",
+                  "minecraft:warm_ocean",
+                  "minecraft:lush_caves",
+                  "minecraft:mangrove_swamp"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  "minecraft:swamp",
+                  "minecraft:lukewarm_ocean",
+                  "minecraft:deep_lukewarm_ocean",
+                  "minecraft:stony_peaks",
+                  "minecraft:beach",
+                  "minecraft:river"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "weight": 15
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/fish"
+}
