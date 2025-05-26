@@ -1,0 +1,40 @@
+{
+  "description": {
+    "text": "Deadly Combos",
+    "color": "gold",
+    "bold": true,
+    "italic": false,
+    "underlined": true,
+    "strikethrough": false,
+    "obfuscated": false
+  },
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 50,
+  "slots": [],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:attack_speed",
+        "id": "minecraft:",
+        "amount": 0.25,
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:sweeping_damage_ratio",
+        "id": "minecraft:",
+        "amount": 1,
+        "operation": "add_value"
+      }
+    ]
+  }
+}
