@@ -1,0 +1,69 @@
+{
+  "description": {
+    "text": "Moon Walker",
+    "color": "gold",
+    "bold": true,
+    "italic": false,
+    "underlined": true,
+    "strikethrough": false,
+    "obfuscated": false
+  },
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "exclusive_set": "#harder_custom_minecraft:exclusive_set/legendary_enchants",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 50,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:gravity",
+        "id": "harder_custom_minecraft:enchantment.moon_walker",
+        "amount": {
+          "type": "minecraft:fraction",
+          "numerator": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          },
+          "denominator": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 1
+          }
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:fall_damage_multiplier",
+        "id": "harder_custom_minecraft:enchantment.moon_walker",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.5,
+          "per_level_above_first": -0.1
+        },
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "harder_custom_minecraft:enchantment.moon_walker",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 1
+        },
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}

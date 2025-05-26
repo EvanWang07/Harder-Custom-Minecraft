@@ -9,6 +9,7 @@
     "obfuscated": false
   },
   "supported_items": "#minecraft:enchantable/sword",
+  "exclusive_set": "#harder_custom_minecraft:exclusive_set/legendary_enchants",
   "weight": 1,
   "max_level": 1,
   "min_cost": {
@@ -27,15 +28,39 @@
     "minecraft:attributes": [
       {
         "attribute": "minecraft:attack_speed",
-        "id": "minecraft:",
-        "amount": 0.25,
+        "id": "harder_custom_minecraft:enchantment.deadly_combos",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
         "operation": "add_multiplied_total"
       },
       {
         "attribute": "minecraft:sweeping_damage_ratio",
-        "id": "minecraft:",
+        "id": "harder_custom_minecraft:enchantment.deadly_combos",
         "amount": 1,
         "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:entity_interaction_range",
+        "id": "harder_custom_minecraft:enchantment.deadly_combos",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.5
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:movement_speed",
+        "id": "harder_custom_minecraft:enchantment.deadly_combos",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.1
+        },
+        "operation": "add_multiplied_total"
       }
     ]
   }
