@@ -10,8 +10,8 @@
             "type": "minecraft:add",
             "value": {
               "type": "minecraft:linear",
-              "base": 0.5,
-              "per_level_above_first": 0.5
+              "base": 1,
+              "per_level_above_first": 1
             }
           },
           "requirements": {
@@ -20,7 +20,11 @@
               "tags": [
                 {
                   "expected": false,
-                  "id": "minecraft:bypasses_invulnerability"
+                  "id": "bypasses_invulnerability"
+                },
+                {
+                  "expected": false,
+                  "id": "harder_custom_minecraft:bypasses_protection"
                 }
               ]
             }

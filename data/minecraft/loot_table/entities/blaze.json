@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [],
+          "name": "minecraft:blaze_rod",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "unenchanted_chance": 0.25,
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.35,
+                "per_level_above_first": 0.1
+              },
+              "enchantment": "minecraft:looting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 0,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod",
+          "functions": [],
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "unenchanted_chance": 0.25,
+              "enchanted_chance": {
+                "type": "minecraft:linear",
+                "base": 0.35,
+                "per_level_above_first": 0.1
+              },
+              "enchantment": "minecraft:looting"
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ]
+        }
+      ],
+      "conditions": []
+    }
+  ],
+  "random_sequence": "minecraft:entities/blaze"
+}
