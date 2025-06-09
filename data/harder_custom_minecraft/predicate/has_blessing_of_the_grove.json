@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "chest": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "harder_custom_minecraft:blessing_of_the_grove"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

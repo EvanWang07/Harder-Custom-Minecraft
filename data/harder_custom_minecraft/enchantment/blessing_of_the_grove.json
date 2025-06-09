@@ -1,0 +1,73 @@
+{
+  "description": {
+    "text": "Blessing of the Grove",
+    "color": "gold",
+    "bold": true,
+    "italic": false,
+    "underlined": true,
+    "strikethrough": false,
+    "obfuscated": false
+  },
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "exclusive_set": "#harder_custom_minecraft:exclusive_set/legendary_enchants",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 50,
+  "slots": [
+    "chest"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:max_health",
+        "id": "harder_custom_minecraft:enchantment.blessing_of_the_grove",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 2,
+          "per_level_above_first": 2
+        },
+        "operation": "add_multiplied_base"
+      },
+      {
+        "attribute": "minecraft:knockback_resistance",
+        "id": "harder_custom_minecraft:enchantment.blessing_of_the_grove",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.5
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:explosion_knockback_resistance",
+        "id": "harder_custom_minecraft:enchantment.blessing_of_the_grove",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.5
+        },
+        "operation": "add_value"
+      },
+      {
+        "attribute": "minecraft:armor_toughness",
+        "id": "harder_custom_minecraft:enchantment.blessing_of_the_grove",
+        "amount": -1,
+        "operation": "add_multiplied_total"
+      },
+      {
+        "attribute": "minecraft:armor",
+        "id": "harder_custom_minecraft:enchantment.blessing_of_the_grove",
+        "amount": -1,
+        "operation": "add_multiplied_total"
+      }
+    ]
+  }
+}
