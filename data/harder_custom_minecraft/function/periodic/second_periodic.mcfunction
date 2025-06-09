@@ -1,4 +1,5 @@
 function harder_custom_minecraft:manage_scores/deadly_combos_stacks/decay_deadly_combos_stack
+function harder_custom_minecraft:misc/blessing_of_the_grove_passive
 
 # Loop the function every second
 schedule function harder_custom_minecraft:periodic/second_periodic 1s

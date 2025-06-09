@@ -1,4 +1,4 @@
-effect give @s minecraft:resistance 3 0
-effect give @s minecraft:speed 3 0
-effect give @s minecraft:strength 3 0
-playsound minecraft:item.flintandsteel.use player @s
+execute as @s run effect give @a minecraft:resistance 3 0
+execute as @s run effect give @a minecraft:speed 3 0
+execute as @s run effect give @a minecraft:strength 3 0
+execute as @s run playsound minecraft:item.flintandsteel.use player @s
