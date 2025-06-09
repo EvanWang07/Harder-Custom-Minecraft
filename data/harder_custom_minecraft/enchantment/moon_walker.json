@@ -38,8 +38,8 @@
           },
           "denominator": {
             "type": "minecraft:linear",
-            "base": 2,
-            "per_level_above_first": 1
+            "base": -2,
+            "per_level_above_first": -1
           }
         },
         "operation": "add_multiplied_total"
