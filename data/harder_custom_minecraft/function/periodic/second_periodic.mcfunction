@@ -1,0 +1,4 @@
+function harder_custom_minecraft:manage_scores/deadly_combos_stacks/decay_deadly_combos_stack
+
+# Loop the function every second
+schedule function harder_custom_minecraft:periodic/second_periodic 1s

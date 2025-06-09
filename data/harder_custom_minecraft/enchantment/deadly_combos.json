@@ -62,6 +62,16 @@
         },
         "operation": "add_multiplied_total"
       }
+    ],
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "harder_custom_minecraft:manage_scores/deadly_combos_stacks/gain_deadly_combos_stack"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
     ]
   }
 }

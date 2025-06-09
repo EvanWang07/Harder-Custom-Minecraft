@@ -1,6 +1,8 @@
 {
     "values": [
+        "harder_custom_minecraft:blessing_of_the_grove",
         "harder_custom_minecraft:deadly_combos",
+        "harder_custom_minecraft:inferno",
         "harder_custom_minecraft:moon_walker"
     ]
 }

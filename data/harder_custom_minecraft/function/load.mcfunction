@@ -1,0 +1,3 @@
+say Welcome!
+function harder_custom_minecraft:manage_scores/create_scoreboards
+function harder_custom_minecraft:periodic/second_periodic

@@ -1,0 +1,1 @@
+effect give @a[predicate=harder_custom_minecraft:has_blessing_of_the_grove] regeneration 2 0

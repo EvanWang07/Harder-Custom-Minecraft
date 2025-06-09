@@ -1,0 +1,77 @@
+{
+  "description": {
+    "text": "Inferno",
+    "color": "gold",
+    "bold": true,
+    "italic": false,
+    "underlined": true,
+    "strikethrough": false,
+    "obfuscated": false
+  },
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "exclusive_set": "#harder_custom_minecraft:exclusive_set/legendary_enchants",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 50,
+  "slots": [
+    "chest"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:is_fire",
+                "expected": false
+              }
+            ]
+          }
+        },
+        "effect": {
+          "type": "minecraft:ignite",
+          "duration": 3.33
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:is_fire",
+                "expected": true
+              }
+            ]
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "harder_custom_minecraft:on_hit/apply_inferno_bonus"
+        },
+        "enchanted": "victim",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:burning_time",
+        "id": "harder_custom_minecraft:enchantment.inferno",
+        "amount": 2,
+        "operation": "add_multiplied_base"
+      }
+    ]
+  }
+}
