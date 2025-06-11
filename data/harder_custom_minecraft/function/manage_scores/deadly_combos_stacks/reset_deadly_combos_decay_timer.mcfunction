@@ -1,0 +1,1 @@
+scoreboard players set @s deadly_combos_decay_timer 5

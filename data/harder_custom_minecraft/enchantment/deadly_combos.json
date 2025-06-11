@@ -67,7 +67,22 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "harder_custom_minecraft:manage_scores/deadly_combos_stacks/gain_deadly_combos_stack"
+          "function": "harder_custom_minecraft:manage_scores/deadly_combos_stacks/reset_deadly_combos_decay_timer"
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      },
+      {
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "deadly_combos_stacks": 5
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "harder_custom_minecraft:manage_scores/deadly_combos_stacks/do_deadly_combos_attack"
         },
         "enchanted": "attacker",
         "affected": "attacker"
